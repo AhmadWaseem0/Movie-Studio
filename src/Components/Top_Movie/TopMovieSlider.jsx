@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./TopMovieSlider.css";
 import afterburn from "../../Assets/images (1).jpeg";
 import ourfault from "../../Assets/images (2).jpeg";
-import elixir from "../../Assets/images (3).jpeg";
+import OneBattleAfterAnother from "../../Assets/One Battle After Another.jpg";
 import stolen from "../../Assets/images.jpeg";
 import darkshadow from "../../Assets/The-Revenant.jpg";
 import hunt from "../../Assets/venom.jpg";
@@ -13,7 +13,7 @@ import hunt from "../../Assets/venom.jpg";
 const movies = [
     { title: "Afterburn", img: afterburn, description: "A young couple faces..." },
     { title: "Our Fault", img: ourfault, description: "A young couple faces..." },
-    { title: "The Elixir", img: elixir, description: "A mysterious scientist..." },
+    { title: "One Battle After Another", img: OneBattleAfterAnother, description: "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue the daughter of one of their own." },
     { title: "Stolen Hearts", img: stolen, description: "A story of love and betrayal..." },
     { title: "Dark Shadow", img: darkshadow, description: "A hunter faces his demons..." },
     { title: "The Hunt", img: hunt, description: "A hunter faces his demons..." }

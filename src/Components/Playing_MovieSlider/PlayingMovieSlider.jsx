@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import "./PlayingMovieSlider.css";
 import afterburn from "../../Assets/images (1).jpeg";
 import ourfault from "../../Assets/images (2).jpeg";

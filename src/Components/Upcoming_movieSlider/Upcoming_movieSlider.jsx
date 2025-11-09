@@ -1,21 +1,21 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Upcoming_movieSlider.css";
-import afterburn from "../../Assets/images (1).jpeg";
-import ourfault from "../../Assets/images (2).jpeg";
+import AQuietPlace from "../../Assets/AQuietPlace.jpg";
+import LifttoLove from "../../Assets/LifttoLove.jpg";
 import elixir from "../../Assets/images (3).jpeg";
 import stolen from "../../Assets/images.jpeg";
-import darkshadow from "../../Assets/The-Revenant.jpg";
+import TheAmateur from "../../Assets/TheAmateur.jpg";
 import hunt from "../../Assets/venom.jpg";
 
 
 
 const movies = [
-    { title: "Afterburn", img: afterburn, description: "A young couple faces..." },
-    { title: "Our Fault", img: ourfault, description: "A young couple faces..." },
+    { title: "A Quiet Place: Day One", img: AQuietPlace, description: "A young woman named Sam finds herself trapped in New York City during the early stages of an invasion by alien creatures with ultra-sensitive hearing." },
+    { title: "Lift to Love", img: LifttoLove, description: "A chance encounter on Valentine's Day brings Hannah and Finn together as they race through New York City to return a lost engagement ring and save one couple's special day." },
     { title: "The Elixir", img: elixir, description: "A mysterious scientist..." },
     { title: "Stolen Hearts", img: stolen, description: "A story of love and betrayal..." },
-    { title: "Dark Shadow", img: darkshadow, description: "A hunter faces his demons..." },
+    { title: "The Amateur", img: TheAmateur, description: "When his supervisors at the CIA refuse to take action after his wife is killed in a London terrorist attack, a decoder takes matters into his own hands." },
     { title: "The Hunt", img: hunt, description: "A hunter faces his demons..." }
 ];
 

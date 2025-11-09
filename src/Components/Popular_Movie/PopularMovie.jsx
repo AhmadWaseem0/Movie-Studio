@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PopularMovie.css";
-import afterburn from "../../Assets/images (1).jpeg";
-import ourfault from "../../Assets/images (2).jpeg";
-import elixir from "../../Assets/images (3).jpeg";
-import stolen from "../../Assets/images.jpeg";
+import thewitcher from "../../Assets/The Witcher.jpg";
+import heartofstone from "../..//Assets/Heart Of Stone.jpg";
+import companion from "../../Assets/Companion.jpg";
+import PrinceofPersia from "../../Assets/Prince of Persia.jpg";
 import darkshadow from "../../Assets/The-Revenant.jpg";
 import hunt from "../../Assets/venom.jpg";
 
@@ -12,10 +12,10 @@ import hunt from "../../Assets/venom.jpg";
 
 
 const movies = [
-    { title: "Afterburn", img: afterburn, description: "A young couple faces..." },
-    { title: "Our Fault", img: ourfault, description: "A young couple faces..." },
-    { title: "The Elixir", img: elixir, description: "A mysterious scientist..." },
-    { title: "Stolen Hearts", img: stolen, description: "A story of love and betrayal..." },
+    { title: "The Witcher", img: thewitcher, description: "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts." },
+    { title: "Heart of Stone", img: heartofstone, description: "An intelligence operative for a shadowy global peacekeeping agency races to stop a hacker from stealing its most valuable and dangerous weapon." },
+    { title: "Prince of Persia", img: PrinceofPersia, description: "A young fugitive prince and princess must stop a villain who unknowingly threatens to destroy the world with a special dagger that enables the magic sand inside to reverse time." },
+    { title: "Companion", img: companion, description: "A weekend getaway with friends at a remote cabin turns into chaos after it's revealed that one of the guests is not what they seem." },
     { title: "Dark Shadow", img: darkshadow, description: "A hunter faces his demons..." },
     { title: "The Hunt", img: hunt, description: "A hunter faces his demons..." }
 ];
