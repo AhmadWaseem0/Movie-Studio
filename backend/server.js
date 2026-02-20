@@ -1,5 +1,9 @@
 const express = require("express");
-require("dotenv").config();
+
+if (process.env.NODE_ENV !== "production") {
+    require("dotenv").config();
+}
+
 const cors = require("cors");
 const movieRoutes = require("./routes/movieRoutes");
 const db = require("./config/db");
@@ -21,5 +25,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Backend running on port ${PORT}`);
 });
-
-
