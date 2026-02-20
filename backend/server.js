@@ -12,14 +12,14 @@ app.use("/api", require("./routes/userRoutes"));
 app.use("/api/movies", movieRoutes);
 app.use("/uploads", express.static("uploads"));
 
-
 db.getConnection()
     .then(() => console.log("✅ MySQL Connected"))
     .catch(err => console.log("❌ DB Error:", err));
-
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
     console.log(`Backend running on port ${PORT}`);
 });
+
+
