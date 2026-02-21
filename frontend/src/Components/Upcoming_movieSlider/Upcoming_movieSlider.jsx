@@ -136,7 +136,7 @@ const Upcoming_movieSlider = () => {
   // ✅ Fetch upcoming movies
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies/upcoming")
+      .get("/api/movies/upcoming")
       .then((res) => setMovies(res.data))
       .catch((err) => console.log(err));
   }, []);

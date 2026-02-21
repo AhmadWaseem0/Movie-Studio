@@ -116,7 +116,7 @@ const Top_movieSlider = () => {
   // ✅ Fetch Top Rated Movies
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies/top-rated")
+      .get("/api/movies/top-rated")
       .then((res) => {
         setMovies(res.data);
       })

@@ -222,7 +222,7 @@ const MyNavbar = () => {
     //     }
 
     //     axios
-    //         .get("http://localhost:5000/api/movies")
+    //         .get("/api/movies")
     //         .then((res) => {
     //             const filtered = res.data.filter((movie) =>
     //                 movie.title.toLowerCase().includes(searchText.toLowerCase())
@@ -247,7 +247,7 @@ const MyNavbar = () => {
         }
 
         axios
-            .get(`http://localhost:5000/api/movies/search?q=${searchText}`)
+            .get(`/api/movies/search?q=${searchText}`)
             .then((res) => setSearchResults(res.data))
             .catch((err) => console.log(err));
     };

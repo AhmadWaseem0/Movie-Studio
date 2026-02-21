@@ -14,7 +14,7 @@
 
 //     // Fetch current movie data
 //     useEffect(() => {
-//         axios.get(`http://localhost:5000/api/movies/${id}`)
+//         axios.get(`/api/movies/${id}`)
 //             .then(res => setFormData(res.data[0])) // Backend returns array usually
 //             .catch(err => alert("Error fetching movie"));
 //     }, [id]);
@@ -27,7 +27,7 @@
 //         e.preventDefault();
 //         try {
 //             await axios.put(
-//                 `http://localhost:5000/api/movies/${id}`,
+//                 `/api/movies/${id}`,
 //                 formData,
 //                 { headers: { Authorization: `Bearer ${token}` } }
 //             );
@@ -90,7 +90,7 @@
 
 //   useEffect(() => {
 //     axios
-//       .get(`http://localhost:5000/api/movies/${id}`)
+//       .get(`/api/movies/${id}`)
 //       .then((res) => {
 //         if (res.data && res.data.length > 0) {
 //           setFormData(res.data[0]);
@@ -113,7 +113,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       await axios.put(`http://localhost:5000/api/movies/${id}`, formData, {
+//       await axios.put(`/api/movies/${id}`, formData, {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 //       alert("✅ Movie Updated!");
@@ -217,7 +217,7 @@ const EditMovie = () => {
   // Fetch current movie
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/movies/${id}`)
+      .get(`/api/movies/${id}`)
       .then((res) => {
         if (res.data && res.data.length > 0) {
           setFormData(res.data[0]);
@@ -260,7 +260,7 @@ const EditMovie = () => {
         data.append("poster", formData.poster); // keep old poster filename
       }
 
-      await axios.put(`http://localhost:5000/api/movies/${id}`, data, {
+      await axios.put(`/api/movies/${id}`, data, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

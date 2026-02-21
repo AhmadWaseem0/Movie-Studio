@@ -13,7 +13,7 @@
 //         e.preventDefault();
 
 //         await axios.post(
-//             "http://localhost:5000/api/movies",
+//             "/api/movies",
 //             { title, genre, poster, rating },
 //             {
 //                 headers: {
@@ -69,7 +69,7 @@
 //     formData.append("poster", poster);
 //     formData.append("rating", rating);
 
-//     await axios.post("http://localhost:5000/api/movies", formData, {
+//     await axios.post("/api/movies", formData, {
 //       headers: {
 //         Authorization: `Bearer ${token}`,
 //         "Content-Type": "multipart/form-data",
@@ -138,7 +138,7 @@
 //     formData.append("rating", rating);
 //     formData.append("category", category);
 
-//     await axios.post("http://localhost:5000/api/movies", formData, {
+//     await axios.post("/api/movies", formData, {
 //       headers: {
 //         Authorization: `Bearer ${token}`,
 //         "Content-Type": "multipart/form-data",
@@ -245,7 +245,7 @@ const AddMovie = () => {
     formData.append("youtubeUrl", youtubeUrl);
 
     try {
-      await axios.post("http://localhost:5000/api/movies", formData, {
+      await axios.post("/api/movies", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

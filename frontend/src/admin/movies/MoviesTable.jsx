@@ -9,12 +9,12 @@
 
 //   useEffect(() => {
 //     axios
-//       .get("http://localhost:5000/api/movies")
+//       .get("/api/movies")
 //       .then((res) => setMovies(res.data));
 //   }, []);
 
 //   const deleteMovie = async (id) => {
-//     await axios.delete(`http://localhost:5000/api/movies/${id}`, {
+//     await axios.delete(`/api/movies/${id}`, {
 //       headers: {
 //         Authorization: `Bearer ${token}`,
 //       },
@@ -88,13 +88,13 @@ const MoviesTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies")
+      .get("/api/movies")
       .then((res) => setMovies(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   const deleteMovie = async (id) => {
-    await axios.delete(`http://localhost:5000/api/movies/${id}`, {
+    await axios.delete(`/api/movies/${id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setMovies(movies.filter((m) => m.id !== id));

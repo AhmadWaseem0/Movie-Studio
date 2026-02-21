@@ -31,7 +31,7 @@ const PopularMovie = () => {
   // ✅ Fetch upcoming movies
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies/popular")
+      .get("/api/movies/popular")
       .then((res) => setMovies(res.data))
       .catch((err) => console.log(err));
   }, []);
