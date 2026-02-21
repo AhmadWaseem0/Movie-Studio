@@ -17,6 +17,10 @@ app.use("/api", require("./routes/userRoutes"));
 app.use("/api/movies", movieRoutes);
 app.use("/uploads", express.static("uploads"));
 
+app.get("/", (req, res) => {
+    res.send("Backend is running ✅");
+});
+
 // Use Railway PORT
 const PORT = process.env.PORT || 5000;
 
